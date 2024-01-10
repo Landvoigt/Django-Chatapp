@@ -47,7 +47,7 @@
             </div>
             {% endfor %}
 
-            <form action="/chat/" method="post">
+            <form action="{% url 'index' %}" method="post">
                 {% csrf_token %}
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="text" id="sample3" name="chatMessage">
@@ -60,7 +60,7 @@
 
             {% else %}
             <h1>Nicht eingeloggt</h1>
-            <span>Bitte klicke hier <a href="/login">hier</a></span>
+            <span>Bitte klicke hier <a href="/login/">hier</a></span>
             {% endif %}
         </div>
     </main>

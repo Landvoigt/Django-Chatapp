@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from chat.models import Message
-from chat.models import Chat
+from .models import Message
+from .models import Chat
 
 def index(request):
     if request.method == 'POST':

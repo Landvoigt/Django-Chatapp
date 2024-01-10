@@ -47,7 +47,7 @@
             </div>
             {% endfor %}
 
-            <form action="{% url 'index' %}" method="post">
+            <form action="/chat/" method="post">
                 {% csrf_token %}
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="text" id="sample3" name="chatMessage">
